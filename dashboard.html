@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Booking Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#" id="addCounselorBtn">Add Counselor</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <header>
+                <h1>Admin Dashboard</h1>
+            </header>
+            <main>
+                <h2>Career Guidance Booking Dashboard</h2>
+                <section class="user-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>Phone Number</th>
+                                <th>Guidance Details</th>
+                                <th>Uploaded PDF</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>123-456-7890</td>
+                                <td>Guidance details for John Doe</td>
+                                <td><a href="path_to_pdf" target="_blank">View PDF</a></td>
+                                <td>
+                                    <button class="accept">Accept</button>
+                                    <button class="reject">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jane Doe</td>
+                                <td>098-765-4321</td>
+                                <td>Guidance details for Jane Doe</td>
+                                <td><a href="path_to_pdf" target="_blank">View PDF</a></td>
+                                <td>
+                                    <button class="accept">Accept</button>
+                                    <button class="reject">Reject</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+        <form id="counselor-form" enctype="multipart/form-data">
+            <!-- Counselor form fields -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="about">About:</label>
+            <textarea id="about" name="about" rows="4" cols="50" required></textarea><br>
+            <label for="education">Education Qualification:</label>
+            <input type="text" id="education" name="education" required><br>
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" name="experience" required><br>
+          
+           <!-- Photo upload section -->
+<div class="photo-upload-section">
+    <label for="photo">Upload Photo:</label>
+    <div class="file-upload-wrapper">
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <img id="photo-preview" src="#" >
+    </div>
+</div>
+
+            <button type="submit">Add</button>
+        </form>
+        
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 Career Guidance Booking System</p>
+    </footer>
+</body>
+</html>
